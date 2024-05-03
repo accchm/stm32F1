@@ -1,5 +1,6 @@
 #include "Main_System.h"
 
+float num;
 /*
 PB8,PB9  电机1（TIM4CH3、CH4）
 PB10，PB11  电机2（TIM2Ch3、CH4，需要重映射）
@@ -24,7 +25,7 @@ int main(void)
 	while(1)
 	{
 		Key_Function();
-		AD_Get();
+		AD_Get(); 
 	}
 }
 void CAR_STARTInit(void)
